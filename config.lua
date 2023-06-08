@@ -24,9 +24,6 @@ vim.g.clipboard = {
     ["*"] = "win32yank.exe -o --lf",
   },
 }
-
-lvim.keys.normal_mode["<C-t>"] = ":ToggleTermToggleAll<CR>"
-
 lvim.builtin.which_key.mappings["t"] = {
   name = "+Terminal",
   f = { "<cmd>ToggleTerm<cr>", "Floating terminal" },
