@@ -35,4 +35,5 @@ lvim.plugins = {
   { "wakatime/vim-wakatime"},
   { 'jose-elias-alvarez/typescript.nvim' },
   { 'mg979/vim-visual-multi' },
+  { 'folke/trouble.nvim'}
 }
