@@ -32,5 +32,6 @@ lvim.builtin.which_key.mappings["t"] = {
 }
 lvim.plugins = {
   { "lunarvim/colorschemes" },
-  { "wakatime/vim-wakatime"}
+  { "wakatime/vim-wakatime"},
+  { 'jose-elias-alvarez/typescript.nvim' },
 }
