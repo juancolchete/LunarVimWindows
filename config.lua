@@ -34,4 +34,5 @@ lvim.plugins = {
   { "lunarvim/colorschemes" },
   { "wakatime/vim-wakatime"},
   { 'jose-elias-alvarez/typescript.nvim' },
+  { 'mg979/vim-visual-multi' },
 }
