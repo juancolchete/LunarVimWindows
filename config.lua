@@ -35,16 +35,10 @@ lvim.builtin.which_key.mappings["ç"] = {
   f = {"<cmd>TroubleToggle lsp_references<cr>","LSP References"}
 }
 
-lvim.builtin.which_key.mappings["t"] = {
-  name = "+Terminal",
-  f = { "<cmd>ToggleTerm<cr>", "Floating terminal" },
-  v = { "<cmd>2ToggleTerm size=30 direction=vertical<cr>", "Split vertical" },
-  h = { "<cmd>2ToggleTerm size=30 direction=horizontal<cr>", "Split horizontal" },
-}
 lvim.plugins = {
   { "lunarvim/colorschemes" },
   { "wakatime/vim-wakatime"},
+  { 'folke/trouble.nvim'},
   { 'jose-elias-alvarez/typescript.nvim' },
-  { 'mg979/vim-visual-multi' },
-  { 'folke/trouble.nvim'}
+  { 'mg979/vim-visual-multi' }
 }
