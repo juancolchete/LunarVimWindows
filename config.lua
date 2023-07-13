@@ -1,6 +1,5 @@
 local lspconfig = require 'lspconfig'
 local configs = require 'lspconfig.configs'
-
 configs.solidity = {
   default_config = {
     cmd = {'nomicfoundation-solidity-language-server', '--stdio'},
@@ -9,6 +8,14 @@ configs.solidity = {
     single_file_support = true,
   },
 }
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  {
+    command = "prettier",
+    filetypes = { "typescript", "typescriptreact" },
+  },
+}
+
 
 vim.opt.shell = "pwsh.exe -NoLogo"
 vim.opt.shellcmdflag =
@@ -36,6 +43,7 @@ lvim.keys.normal_mode["<S-x>"] = ":BufferKill<CR>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 lvim.keys.normal_mode["<space>'"] = ":Lizard<CR>"
+lvim.keys.visual_mode["<space>v"] = "g<C-G>"
 lvim.keys.normal_mode["<C-a>"] = "ggVG"
 lvim.keys.normal_mode["<C-s>"] = "zfa]"
 lvim.keys.normal_mode["<C-z>"] = "zfa}"
@@ -55,5 +63,6 @@ lvim.plugins = {
   { 'folke/trouble.nvim'},
   { 'jose-elias-alvarez/typescript.nvim' },
   { 'mg979/vim-visual-multi' },
-  { 'juancolchete/lizard'}
+  { 'juancolchete/lizard'},
+  { 'brooth/far.vim'},
 }
