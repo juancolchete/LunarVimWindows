@@ -1,7 +1,10 @@
 require'nvim-treesitter.configs'.setup {
  ignore_install = { "yaml" },
 }
-
+local linters = require "lvim.lsp.null-ls.linters"
+linters.setup {
+  { command = "eslint", filetypes = { "typescript", "typescriptreact" } }
+}
 local lspconfig = require 'lspconfig'
 local configs = require 'lspconfig.configs'
 configs.solidity = {
