@@ -1,3 +1,7 @@
+require'nvim-treesitter.configs'.setup {
+ ignore_install = { "yaml" },
+}
+
 local lspconfig = require 'lspconfig'
 local configs = require 'lspconfig.configs'
 configs.solidity = {
@@ -15,7 +19,6 @@ formatters.setup {
     filetypes = { "typescript", "typescriptreact" },
   },
 }
-
 
 vim.opt.shell = "pwsh.exe -NoLogo"
 vim.opt.shellcmdflag =
@@ -65,4 +68,5 @@ lvim.plugins = {
   { 'mg979/vim-visual-multi' },
   { 'juancolchete/lizard'},
   { 'brooth/far.vim'},
+  { 'ikatyang/tree-sitter-yaml' }
 }
