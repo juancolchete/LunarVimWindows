@@ -19,7 +19,7 @@ local plugins = ""
 local date = os.date("%a %d %b")
 local plugin_count = {
   type = "text",
-  val = "└─      " ..config.. kind.cmp_kind.Module .." " .. plugins .. " plugins in total      ─┘",
+  val = "└─      " .. kind.cmp_kind.Module .." " .. plugins .. " plugins in total      ─┘",
   opts = {
     position = "center",
     hl = "String",
@@ -37,7 +37,7 @@ local org = {
 
 local heading = {
   type = "text",
-  val = "┌─ " .. kind.icons.calendar.. "Hi ".. userShow .. env.user  .. " Today is " .. date .. " ─┐",
+  val = "┌─ " .. kind.icons.calendar.. "Hi ".. userShow .. " Today is " .. date .. " ─┐",
   opts = {
     position = "center",
     hl = "String",
