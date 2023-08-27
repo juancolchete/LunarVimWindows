@@ -79,7 +79,7 @@ M.dashboard = function()
     "  ⠛⠛⠛⠛⠛⠛⠛⠛⠛⠈⠛⠛⠛⠛⠉⠉⠛⠛⠛⠛⠁⠛⠛⠛⠛⠛⠛⠛⠛⠛",
           }
   }
-  return headers[4]
+  return headers[2]
 end
 
 return M
