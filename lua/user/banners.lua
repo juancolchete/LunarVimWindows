@@ -113,7 +113,7 @@ M.dashboard = function()
     "⠀⠀⠀⠀⠀⠉⠉⠙⠛⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     }
   }
-  return headers[6]
+  return headers[5]
 end
 
 return M
